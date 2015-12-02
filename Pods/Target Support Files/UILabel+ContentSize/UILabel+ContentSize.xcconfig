@@ -1,0 +1,1 @@
+UILABEL_CONTENTSIZE_OTHER_LDFLAGS = -framework "Foundation"
