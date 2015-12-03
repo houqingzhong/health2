@@ -11,11 +11,14 @@
 
 @class Track;
 @class YTKKeyValueStore;
+@class LeftSlideViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) YTKKeyValueStore  *localStore;
 
+@property (strong, nonatomic) UINavigationController            *nav;
+@property (strong, nonatomic) LeftSlideViewController           *leftSlideVC;
 @end
 

@@ -1,0 +1,6 @@
+framework module UINavigationItem_iOS7Spacing {
+  umbrella header "UINavigationItem-iOS7Spacing-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -19,19 +19,25 @@
 #define Host       @"http://www.zhiyurencai.cn/music/api/"
 #define JingLuoTag @"jingluo"
 
-#import <UIView+Facade.h>
-#import <UIColor+MoreColors.h>
-#import <UILabel+ContentSize.h>
-#import <AGLocationDispatcher.h>
-#import <TTTAttributedLabel.h>
-#import <RichStyleLabel.h>
-#import <ZCAnimatedLabel.h>
-#import <YTKKeyValueStore.h>
-#import <JSONKit.h>
-#import <AESCrypt.h>
+#import "AFNetworking.h"
+#import "UIView+Facade.h"
+#import "UIColor+MoreColors.h"
+#import "UILabel+ContentSize.h"
+#import "AGLocationDispatcher.h"
+#import "TTTAttributedLabel.h"
+#import "RichStyleLabel.h"
+#import "ZCAnimatedLabel.h"
+#import "YTKKeyValueStore.h"
+#import "JSONKit.h"
+#import "AESCrypt.h"
+#import "UIScrollView+SVPullToRefresh.h"
+#import "UIScrollView+SVInfiniteScrolling.h"
 #import <MD5Digest/NSString+MD5.h>
-#import <NSString+TBEncryption.h>
-#import <EPSWebViewController.h>
+#import "NSString+TBEncryption.h"
+#import "EPSWebViewController.h"
+#import <ChameleonFramework/Chameleon.h>
+#import "UINavigationItem+iOS7Spacing.h"
+#import "WTAZoomNavigationController.h"
 #import "NSString+Extension.h"
 #import "UIColor+Hex.h"
 #import "HPublicMethod.h"

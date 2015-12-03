@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6CA3CD9B37502B216F87FDE4"
-               BuildableName = "libRichStyleLabel.a"
+               BlueprintIdentifier = "38EFBED65BD653DC5CA8BEF8"
+               BuildableName = "RichStyleLabel.framework"
                BlueprintName = "RichStyleLabel"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -14,3 +14,8 @@ pod 'MD5Digest', '~> 1.0.1'
 pod 'NSString+TBEncryption', '~> 1.0'
 pod 'EPSWebViewController', '~> 0.1'
 #pod 'DWUWebView'
+use_frameworks!
+pod 'ChameleonFramework'
+pod 'WTAZoomNavigationController', '~> 1.0.7'
+pod 'UINavigationItem-iOS7Spacing', '~> 0.2'
+pod 'SVPullToRefreshImprove', '~> 0.5'

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0F1FDD0876907098CDDD630 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D64658B9D73818BD77B0E /* libPods.a */; };
+		1D982BA21C1051EA008321C6 /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D982BA11C1051EA008321C6 /* LeftSortsViewController.m */; };
+		1D982BA91C1054B7008321C6 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D982BA61C1054B7008321C6 /* LeftSlideViewController.m */; };
+		1D982BAA1C1054B7008321C6 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D982BA81C1054B7008321C6 /* UIView_extra.m */; };
+		EB5B51A0AD174BB0F2245585 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317941FEB199D8DF7C8D94B2 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FF28B72C1BDCF4A60054C7B4 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FF28B72B1BDCF4A60054C7B4 /* HttpClient.m */; };
 		FF28B7321BDD0F6A0054C7B4 /* HPublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FF28B7311BDD0F6A0054C7B4 /* HPublicMethod.m */; };
 		FF2B937E1BE479E00014DF39 /* NavPlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2B937D1BE479E00014DF39 /* NavPlayButton.m */; };
@@ -33,8 +36,14 @@
 
 /* Begin PBXFileReference section */
 		1C59895F6647A2FA57E6C1FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1D982BA01C1051EA008321C6 /* LeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSortsViewController.h; sourceTree = "<group>"; };
+		1D982BA11C1051EA008321C6 /* LeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSortsViewController.m; sourceTree = "<group>"; };
+		1D982BA51C1054B7008321C6 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		1D982BA61C1054B7008321C6 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
+		1D982BA71C1054B7008321C6 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIView_extra.h; path = ../UIView_extra.h; sourceTree = "<group>"; };
+		1D982BA81C1054B7008321C6 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIView_extra.m; path = ../UIView_extra.m; sourceTree = "<group>"; };
+		317941FEB199D8DF7C8D94B2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		399DFCCFE63ACE241A2D3D6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		F71D64658B9D73818BD77B0E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF28B72A1BDCF4A60054C7B4 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
 		FF28B72B1BDCF4A60054C7B4 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
 		FF28B7301BDD0F6A0054C7B4 /* HPublicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPublicMethod.h; sourceTree = "<group>"; };
@@ -83,13 +92,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F1FDD0876907098CDDD630 /* libPods.a in Frameworks */,
+				EB5B51A0AD174BB0F2245585 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D982BA31C105433008321C6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D982BA51C1054B7008321C6 /* LeftSlideViewController.h */,
+				1D982BA61C1054B7008321C6 /* LeftSlideViewController.m */,
+				FFD8B9A01BE1271E0041EBE6 /* BaseViewController.h */,
+				FFD8B9A11BE1271E0041EBE6 /* BaseViewController.m */,
+				1D982BA01C1051EA008321C6 /* LeftSortsViewController.h */,
+				1D982BA11C1051EA008321C6 /* LeftSortsViewController.m */,
+				FFC30B671BDCB52100D89D62 /* ViewController.h */,
+				FFC30B681BDCB52100D89D62 /* ViewController.m */,
+				FFA281BC1BDCE3DC0095539F /* MainViewController.h */,
+				FFA281BD1BDCE3DC0095539F /* MainViewController.m */,
+				FFD8B9A31BE128CE0041EBE6 /* IntroViewController.h */,
+				FFD8B9A41BE128CE0041EBE6 /* IntroViewController.m */,
+				FFDCC4941BE1304B002CCAB9 /* WebViewDetailController.h */,
+				FFDCC4951BE1304B002CCAB9 /* WebViewDetailController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		1D982BA41C10544F008321C6 /* comm */ = {
+			isa = PBXGroup;
+			children = (
+				FFC30B7F1BDCB9B200D89D62 /* HPublic.h */,
+				FF28B72A1BDCF4A60054C7B4 /* HttpClient.h */,
+				FF28B72B1BDCF4A60054C7B4 /* HttpClient.m */,
+				FF28B7301BDD0F6A0054C7B4 /* HPublicMethod.h */,
+				FF28B7311BDD0F6A0054C7B4 /* HPublicMethod.m */,
+			);
+			name = comm;
+			sourceTree = "<group>";
+		};
 		B18E3907ACF8E810663E1D2B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +144,7 @@
 		E94E6733C7865BDC5520F022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F71D64658B9D73818BD77B0E /* libPods.a */,
+				317941FEB199D8DF7C8D94B2 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,31 +185,18 @@
 		FFC30B601BDCB52100D89D62 /* health */ = {
 			isa = PBXGroup;
 			children = (
+				1D982BA41C10544F008321C6 /* comm */,
+				1D982BA31C105433008321C6 /* controller */,
 				FF5608691BE5F1FE00BE2EDA /* SHFile */,
 				FFC30B801BDCC16100D89D62 /* category */,
 				FFC30B781BDCB92700D89D62 /* view */,
 				FFC30B641BDCB52100D89D62 /* AppDelegate.h */,
 				FFC30B651BDCB52100D89D62 /* AppDelegate.m */,
-				FFC30B7F1BDCB9B200D89D62 /* HPublic.h */,
-				FFD8B9A01BE1271E0041EBE6 /* BaseViewController.h */,
-				FFD8B9A11BE1271E0041EBE6 /* BaseViewController.m */,
-				FFC30B671BDCB52100D89D62 /* ViewController.h */,
-				FFC30B681BDCB52100D89D62 /* ViewController.m */,
-				FFA281BC1BDCE3DC0095539F /* MainViewController.h */,
-				FFA281BD1BDCE3DC0095539F /* MainViewController.m */,
-				FFD8B9A31BE128CE0041EBE6 /* IntroViewController.h */,
-				FFD8B9A41BE128CE0041EBE6 /* IntroViewController.m */,
-				FFDCC4941BE1304B002CCAB9 /* WebViewDetailController.h */,
-				FFDCC4951BE1304B002CCAB9 /* WebViewDetailController.m */,
 				FFC30B6A1BDCB52100D89D62 /* Main.storyboard */,
 				FFC30B6D1BDCB52100D89D62 /* Assets.xcassets */,
 				FFC30B6F1BDCB52100D89D62 /* LaunchScreen.storyboard */,
 				FFC30B721BDCB52100D89D62 /* Info.plist */,
 				FFC30B611BDCB52100D89D62 /* Supporting Files */,
-				FF28B72A1BDCF4A60054C7B4 /* HttpClient.h */,
-				FF28B72B1BDCF4A60054C7B4 /* HttpClient.m */,
-				FF28B7301BDD0F6A0054C7B4 /* HPublicMethod.h */,
-				FF28B7311BDD0F6A0054C7B4 /* HPublicMethod.m */,
 			);
 			path = health;
 			sourceTree = "<group>";
@@ -189,6 +218,8 @@
 				FFC30B7A1BDCB95100D89D62 /* HBaseCell.m */,
 				FFDCC4991BE270FC002CCAB9 /* HTypeCell.h */,
 				FFDCC49A1BE270FC002CCAB9 /* HTypeCell.m */,
+				1D982BA71C1054B7008321C6 /* UIView_extra.h */,
+				1D982BA81C1054B7008321C6 /* UIView_extra.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -216,6 +247,7 @@
 				FFC30B5B1BDCB52100D89D62 /* Frameworks */,
 				FFC30B5C1BDCB52100D89D62 /* Resources */,
 				50A0CD785E0C7B992CB1D167 /* Copy Pods Resources */,
+				A42C656EC70546E74B74FB56 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +339,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A42C656EC70546E74B74FB56 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -317,13 +364,16 @@
 				FFC30B691BDCB52100D89D62 /* ViewController.m in Sources */,
 				FFA281BB1BDCE2270095539F /* NSString+Extension.m in Sources */,
 				FF28B72C1BDCF4A60054C7B4 /* HttpClient.m in Sources */,
+				1D982BAA1C1054B7008321C6 /* UIView_extra.m in Sources */,
 				FF5608741BE5F1FE00BE2EDA /* SHFile.m in Sources */,
 				FFC30B7B1BDCB95100D89D62 /* HBaseCell.m in Sources */,
+				1D982BA21C1051EA008321C6 /* LeftSortsViewController.m in Sources */,
 				FFD8B9A51BE128CE0041EBE6 /* IntroViewController.m in Sources */,
 				FF5608721BE5F1FE00BE2EDA /* SHDocumentsFile.m in Sources */,
 				FF5608751BE5F1FE00BE2EDA /* SHTemporaryFile.m in Sources */,
 				FFC30B661BDCB52100D89D62 /* AppDelegate.m in Sources */,
 				FFDCC49B1BE270FC002CCAB9 /* HTypeCell.m in Sources */,
+				1D982BA91C1054B7008321C6 /* LeftSlideViewController.m in Sources */,
 				FFDCC4961BE1304B002CCAB9 /* WebViewDetailController.m in Sources */,
 				FFA281BE1BDCE3DC0095539F /* MainViewController.m in Sources */,
 				FFA281C11BDCE6930095539F /* UIColor+Hex.m in Sources */,

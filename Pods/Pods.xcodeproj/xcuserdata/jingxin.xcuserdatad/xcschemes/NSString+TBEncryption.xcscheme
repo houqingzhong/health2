@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "79C9CC9E2EA926CFFCBEE4AD"
-               BuildableName = "libNSString+TBEncryption.a"
+               BlueprintIdentifier = "2545DC5CF8B536311967B7F4"
+               BuildableName = "NSString_TBEncryption.framework"
                BlueprintName = "NSString+TBEncryption"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

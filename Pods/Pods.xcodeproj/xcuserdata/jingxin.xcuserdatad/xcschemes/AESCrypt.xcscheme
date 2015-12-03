@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEC6878AD4FEC30BEB5072E3"
-               BuildableName = "libAESCrypt.a"
+               BlueprintIdentifier = "F845FBFF3F0B34F9A7C77A9E"
+               BuildableName = "AESCrypt.framework"
                BlueprintName = "AESCrypt"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

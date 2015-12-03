@@ -1,0 +1,6 @@
+framework module RichStyleLabel {
+  umbrella header "RichStyleLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

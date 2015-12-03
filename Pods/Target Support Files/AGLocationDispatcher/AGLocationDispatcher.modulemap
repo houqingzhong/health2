@@ -1,0 +1,6 @@
+framework module AGLocationDispatcher {
+  umbrella header "AGLocationDispatcher-umbrella.h"
+
+  export *
+  module * { export * }
+}

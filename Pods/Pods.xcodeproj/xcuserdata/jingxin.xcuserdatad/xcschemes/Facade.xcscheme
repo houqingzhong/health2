@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F73F1D9227EE3E0D4B2503F"
-               BuildableName = "libFacade.a"
+               BlueprintIdentifier = "7E898CDEA085DD058680308D"
+               BuildableName = "Facade.framework"
                BlueprintName = "Facade"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>EPSWebViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -64,6 +69,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVPullToRefreshImprove.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TTTAttributedLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -75,6 +85,16 @@
 			<false/>
 		</dict>
 		<key>UILabel+ContentSize.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UINavigationItem-iOS7Spacing.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>WTAZoomNavigationController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -92,87 +112,107 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>281FC632EB193B197F9C33A00D159EDC</key>
+		<key>00E9F03C9CBB2C0FF1344A48DC7527A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B3327DB058719BE892FD7EA0204115A</key>
+		<key>0BBE7F56EC6E5E647E1CC27C9680A494</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>51577466396593F7A2102C918D18FA55</key>
+		<key>1F4D6BA319742246B804941154524C07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>546DAE07A9A3F6E94BFF325C55391525</key>
+		<key>21EDD644402D467859151BB70225F30C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>55E3BAD594CAB8A0672DDE1E423B67E8</key>
+		<key>26CC519226FAE5A19FACC5BDAD37FC75</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5918F4B3C214D17E7FC763FB44F6AA02</key>
+		<key>342BF0C2F18D447E1FDEEE28E13EB782</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>626D3574975AAC515DC4439F604D8BDB</key>
+		<key>59B9BDABE6BC7AC9B179EE31BD270882</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6EFF89469113B19046A9DA819E429ED2</key>
+		<key>77934388A4056F76347F6151BB34604F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73C61BBB170059308D3D17EE11F1460B</key>
+		<key>7C7649DB7D9DCA4C042B24FF83C06C79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8175FDFD3E04762C912E6EF724925377</key>
+		<key>8D205DA16BB31C92E93656EEC9525616</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84D44BEE2F309CBDC34EB3018D253E45</key>
+		<key>9777FB8B499A480F547767A706770467</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86ADF710EF79EF852562CE67AE914FA0</key>
+		<key>A988473A0599473D6CAD4ECF03372B77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9BAF7C92D8239C1234E806B4CFC70FB2</key>
+		<key>B31B1949F79B1451DDFF716CF74CE364</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F467325D0A9F8716ED58FD7170A6D95</key>
+		<key>B49D6A60EF4CB63601D1D8A617D3E9AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C36924A9F480D6678FDDD2902EB09961</key>
+		<key>B5C8D1125CC9ACB21BAC495BEAEA864D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6CCAB71070AAFC5CE8828041CDF2545</key>
+		<key>BFA8B133436C06D9C69ADFCF0BD1FBDB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F70ECC353DDBA99740D01BA6FB45B9A1</key>
+		<key>CF7CA6744D29D588DC30D898B20426F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D3233E038A22D11E48785E042989CEA1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA0C4E7EB241E25506DD7CF9C48D4B31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E19B2ADF83FBBD29B7AA2D12AEF9874E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E490CBC9951AF9BA009C7BE01C18F390</key>
 		<dict>
 			<key>primary</key>
 			<true/>

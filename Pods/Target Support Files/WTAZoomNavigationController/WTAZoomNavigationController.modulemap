@@ -1,0 +1,6 @@
+framework module WTAZoomNavigationController {
+  umbrella header "WTAZoomNavigationController-umbrella.h"
+
+  export *
+  module * { export * }
+}

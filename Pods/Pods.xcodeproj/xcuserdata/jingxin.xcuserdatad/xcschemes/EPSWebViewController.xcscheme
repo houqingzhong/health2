@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "071DC54763D71921DA6901C5"
-               BuildableName = "libEPSWebViewController.a"
+               BlueprintIdentifier = "709B495C2003A6679B430816"
+               BuildableName = "EPSWebViewController.framework"
                BlueprintName = "EPSWebViewController"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -1,0 +1,6 @@
+framework module EPSWebViewController {
+  umbrella header "EPSWebViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

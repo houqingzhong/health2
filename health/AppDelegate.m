@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "HPublic.h"
+#import "LeftSlideViewController.h"
+#import "LeftSortsViewController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -51,6 +54,19 @@
                            forState:UIControlStateHighlighted];
     // 5.设置状态栏样式
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];   //设置通用背景颜色
+    //[self.window makeKeyAndVisible];
+    
+    MainViewController *mainVC = [[MainViewController alloc] init];
+    self.nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    LeftSortsViewController *leftVC = [[LeftSortsViewController alloc] init];
+    self.leftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.nav];
+    
+    self.window.rootViewController = self.nav;
     
     return YES;
 }

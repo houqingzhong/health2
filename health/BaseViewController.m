@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 #import "HPublic.h"
-
+#import "LeftSlideViewController.h"
 @implementation BaseViewController
 
 - (void)viewDidLoad
@@ -18,18 +18,38 @@
 
 }
 
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
     
-}
+    
+    App(app);
+    [app.leftSlideVC setPanEnabled:NO];
+    
 
+}
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-
+    NSLog(@"viewWillDisappear");
+    
+    App(app);
+    [app.leftSlideVC setPanEnabled:NO];
+    
+}
+- (void) openOrCloseLeftList
+{
+    App(app);
+    
+    if (app.leftSlideVC.closed)
+    {
+        [app.leftSlideVC openLeftView];
+    }
+    else
+    {
+        [app.leftSlideVC closeLeftView];
+    }
 }
 
 - (void)introView

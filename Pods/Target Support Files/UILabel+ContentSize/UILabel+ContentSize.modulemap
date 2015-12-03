@@ -1,0 +1,6 @@
+framework module UILabel_ContentSize {
+  umbrella header "UILabel+ContentSize-umbrella.h"
+
+  export *
+  module * { export * }
+}
