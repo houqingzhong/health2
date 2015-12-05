@@ -9,7 +9,7 @@
 #import "IntroViewController.h"
 #import "HPublic.h"
 
-@interface IntroViewController()<NJKScrollFullscreenDelegate, UIScrollViewDelegate>
+@interface IntroViewController()<NJKScrollFullscreenDelegate, UIScrollViewDelegate, UIWebViewDelegate>
 {
     NJKScrollFullScreen     *_scrollProxy;
     
@@ -47,7 +47,7 @@
     _scrollProxy = [[NJKScrollFullScreen alloc] initWithForwardTarget:self];
     self.webView.scrollView.delegate = _scrollProxy;
     _scrollProxy.delegate = self;
-
+    self.webView.delegate = self;
 }
 
 - (void)viewDidLayoutSubviews
@@ -112,15 +112,6 @@
     
     NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     self.title = title;
-    
-    NSURL *requestedURL = [webView.request URL];
-    if (!_fileExist) {
-        NSData *fileData = [[NSData alloc] initWithContentsOfURL:requestedURL];
-        
-        NSString *docPath = [HPublicMethod documentsDirectoryPath];
-        NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [requestedURL.absoluteString tb_MD5String]];
-        [fileData writeToFile:pathToDownloadTo atomically:YES];
-    }
 
 }
 
