@@ -112,6 +112,16 @@
     
     NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     self.title = title;
+    
+    NSURL *requestedURL = [webView.request URL];
+    if (!_fileExist) {
+        NSData *fileData = [[NSData alloc] initWithContentsOfURL:requestedURL];
+        
+        NSString *docPath = [HPublicMethod documentsDirectoryPath];
+        NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [requestedURL.absoluteString tb_MD5String]];
+        [fileData writeToFile:pathToDownloadTo atomically:YES];
+    }
+
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
