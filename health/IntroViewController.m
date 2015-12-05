@@ -17,8 +17,8 @@
     NSURL                          *_targetURL;
 }
 
-@property (nonatomic, strong) UIWebView *webView;;
-
+@property (nonatomic, strong) UIWebView  *webView;
+@property (nonatomic, strong) NSURL         *requestUrl;
 
 @end
 
@@ -68,31 +68,43 @@
 
 - (void)loadPath:(NSURL *)fileURL
 {
-
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD HUDForView:self.view];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"下载数据中...";
     
+    self.requestUrl = fileURL;
+    
+    [self loadData:fileURL];
+    
+}
+
+- (void)loadData:(NSURL *)fileURL
+{
     NSString *docPath = [HPublicMethod documentsDirectoryPath];
     NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@.%@", [fileURL.absoluteString tb_MD5String], fileURL.pathExtension]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     _fileExist = [fileManager fileExistsAtPath:pathToDownloadTo];
     NSURL *targetURL = [NSURL fileURLWithPath:pathToDownloadTo];
-
+    
     if (!_fileExist) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSData *fileData = [[NSData alloc] initWithContentsOfURL:fileURL];
             NSString *docPath = [HPublicMethod documentsDirectoryPath];
-            NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@%@", [fileURL.absoluteString tb_MD5String], fileURL.pathExtension]];
+            NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@.%@", [fileURL.absoluteString tb_MD5String], fileURL.pathExtension]];
             [fileData writeToFile:pathToDownloadTo atomically:YES];
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSURLRequest* request = [NSURLRequest requestWithURL:targetURL] ;
                 [self.webView loadRequest:request];
             });
-            
         });
+    }
+    else
+    {
+        NSURLRequest* request = [NSURLRequest requestWithURL:targetURL] ;
+        [self.webView loadRequest:request];
     }
 
 }
-
 #pragma mark webview delegate
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
@@ -118,7 +130,7 @@
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD HUDForView:self.view];
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.labelText = @"加载中...";
 }
@@ -152,6 +164,9 @@
     [self showNavigationBar:YES];
     
     self.webView.frame = self.view.bounds;
+    
+    [self loadData:self.requestUrl];
+    
 }
 
 #pragma mark initial view
