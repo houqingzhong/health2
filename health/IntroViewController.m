@@ -71,7 +71,7 @@
 
     NSString *docPath = [HPublicMethod documentsDirectoryPath];
 
-    NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [fileURL.absoluteString tb_MD5String]];
+    NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@%@", [fileURL.absoluteString tb_MD5String], fileURL.pathExtension]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     _fileExist = [fileManager fileExistsAtPath:pathToDownloadTo];
     
@@ -98,7 +98,7 @@
         NSData *fileData = [[NSData alloc] initWithContentsOfURL:requestedURL];
         
         NSString *docPath = [HPublicMethod documentsDirectoryPath];
-        NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [requestedURL.absoluteString tb_MD5String]];
+        NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@%@", [requestedURL.absoluteString tb_MD5String], requestedURL.pathExtension]];
         [fileData writeToFile:pathToDownloadTo atomically:YES];
     }
 
