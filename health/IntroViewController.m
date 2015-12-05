@@ -45,7 +45,7 @@
     
 
     _scrollProxy = [[NJKScrollFullScreen alloc] initWithForwardTarget:self];
-    _webView.scrollView.delegate = _scrollProxy;
+    self.webView.scrollView.delegate = _scrollProxy;
     _scrollProxy.delegate = self;
 
 }
@@ -54,7 +54,7 @@
 {
     [super viewDidLayoutSubviews];
     
-    _webView.frame = self.view.bounds;
+    self.webView.frame = self.view.bounds;
 }
 
 //- (void)loadHtml:(NSString *)fileName
@@ -84,7 +84,7 @@
         targetURL = fileURL;
     }
     NSURLRequest* request = [NSURLRequest requestWithURL:targetURL] ;
-    [_webView loadRequest:request];
+    [self.webView loadRequest:request];
 }
 
 #pragma mark webview delegate
@@ -153,7 +153,7 @@
 {
     [self showNavigationBar:YES];
     
-    _webView.frame = self.view.bounds;
+    self.webView.frame = self.view.bounds;
 }
 
 #pragma mark initial view
