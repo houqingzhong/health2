@@ -10,6 +10,9 @@
 		1D982BA21C1051EA008321C6 /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D982BA11C1051EA008321C6 /* LeftSortsViewController.m */; };
 		1D982BA91C1054B7008321C6 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D982BA61C1054B7008321C6 /* LeftSlideViewController.m */; };
 		1D982BAA1C1054B7008321C6 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D982BA81C1054B7008321C6 /* UIView_extra.m */; };
+		1DA192C01C12C028008CB4A5 /* UIDevice+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA192BF1C12C028008CB4A5 /* UIDevice+Orientation.m */; };
+		1DA192C31C12C82D008CB4A5 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA192C21C12C82D008CB4A5 /* WebViewController.m */; };
+		1DA192C71C12CBE5008CB4A5 /* AGDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA192C61C12CBE5008CB4A5 /* AGDragView.m */; };
 		EB5B51A0AD174BB0F2245585 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317941FEB199D8DF7C8D94B2 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FF28B72C1BDCF4A60054C7B4 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FF28B72B1BDCF4A60054C7B4 /* HttpClient.m */; };
 		FF28B7321BDD0F6A0054C7B4 /* HPublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FF28B7311BDD0F6A0054C7B4 /* HPublicMethod.m */; };
@@ -23,7 +26,6 @@
 		FFA281C11BDCE6930095539F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA281C01BDCE6930095539F /* UIColor+Hex.m */; };
 		FFC30B631BDCB52100D89D62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC30B621BDCB52100D89D62 /* main.m */; };
 		FFC30B661BDCB52100D89D62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC30B651BDCB52100D89D62 /* AppDelegate.m */; };
-		FFC30B691BDCB52100D89D62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC30B681BDCB52100D89D62 /* ViewController.m */; };
 		FFC30B6C1BDCB52100D89D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC30B6A1BDCB52100D89D62 /* Main.storyboard */; };
 		FFC30B6E1BDCB52100D89D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC30B6D1BDCB52100D89D62 /* Assets.xcassets */; };
 		FFC30B711BDCB52100D89D62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC30B6F1BDCB52100D89D62 /* LaunchScreen.storyboard */; };
@@ -42,6 +44,12 @@
 		1D982BA61C1054B7008321C6 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
 		1D982BA71C1054B7008321C6 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIView_extra.h; path = ../UIView_extra.h; sourceTree = "<group>"; };
 		1D982BA81C1054B7008321C6 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIView_extra.m; path = ../UIView_extra.m; sourceTree = "<group>"; };
+		1DA192BE1C12C028008CB4A5 /* UIDevice+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Orientation.h"; sourceTree = "<group>"; };
+		1DA192BF1C12C028008CB4A5 /* UIDevice+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Orientation.m"; sourceTree = "<group>"; };
+		1DA192C11C12C82D008CB4A5 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1DA192C21C12C82D008CB4A5 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		1DA192C51C12CBE5008CB4A5 /* AGDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDragView.h; sourceTree = "<group>"; };
+		1DA192C61C12CBE5008CB4A5 /* AGDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDragView.m; sourceTree = "<group>"; };
 		317941FEB199D8DF7C8D94B2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		399DFCCFE63ACE241A2D3D6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FF28B72A1BDCF4A60054C7B4 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
@@ -68,8 +76,6 @@
 		FFC30B621BDCB52100D89D62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFC30B641BDCB52100D89D62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFC30B651BDCB52100D89D62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FFC30B671BDCB52100D89D62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FFC30B681BDCB52100D89D62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FFC30B6B1BDCB52100D89D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFC30B6D1BDCB52100D89D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFC30B701BDCB52100D89D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,10 +114,10 @@
 				FFD8B9A11BE1271E0041EBE6 /* BaseViewController.m */,
 				1D982BA01C1051EA008321C6 /* LeftSortsViewController.h */,
 				1D982BA11C1051EA008321C6 /* LeftSortsViewController.m */,
-				FFC30B671BDCB52100D89D62 /* ViewController.h */,
-				FFC30B681BDCB52100D89D62 /* ViewController.m */,
 				FFA281BC1BDCE3DC0095539F /* MainViewController.h */,
 				FFA281BD1BDCE3DC0095539F /* MainViewController.m */,
+				1DA192C11C12C82D008CB4A5 /* WebViewController.h */,
+				1DA192C21C12C82D008CB4A5 /* WebViewController.m */,
 				FFD8B9A31BE128CE0041EBE6 /* IntroViewController.h */,
 				FFD8B9A41BE128CE0041EBE6 /* IntroViewController.m */,
 				FFDCC4941BE1304B002CCAB9 /* WebViewDetailController.h */,
@@ -128,8 +134,19 @@
 				FF28B72B1BDCF4A60054C7B4 /* HttpClient.m */,
 				FF28B7301BDD0F6A0054C7B4 /* HPublicMethod.h */,
 				FF28B7311BDD0F6A0054C7B4 /* HPublicMethod.m */,
+				1DA192BE1C12C028008CB4A5 /* UIDevice+Orientation.h */,
+				1DA192BF1C12C028008CB4A5 /* UIDevice+Orientation.m */,
 			);
 			name = comm;
+			sourceTree = "<group>";
+		};
+		1DA192C41C12CBE5008CB4A5 /* AGDragView */ = {
+			isa = PBXGroup;
+			children = (
+				1DA192C51C12CBE5008CB4A5 /* AGDragView.h */,
+				1DA192C61C12CBE5008CB4A5 /* AGDragView.m */,
+			);
+			path = AGDragView;
 			sourceTree = "<group>";
 		};
 		B18E3907ACF8E810663E1D2B /* Pods */ = {
@@ -185,6 +202,7 @@
 		FFC30B601BDCB52100D89D62 /* health */ = {
 			isa = PBXGroup;
 			children = (
+				1DA192C41C12CBE5008CB4A5 /* AGDragView */,
 				1D982BA41C10544F008321C6 /* comm */,
 				1D982BA31C105433008321C6 /* controller */,
 				FF5608691BE5F1FE00BE2EDA /* SHFile */,
@@ -361,8 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC30B691BDCB52100D89D62 /* ViewController.m in Sources */,
 				FFA281BB1BDCE2270095539F /* NSString+Extension.m in Sources */,
+				1DA192C71C12CBE5008CB4A5 /* AGDragView.m in Sources */,
 				FF28B72C1BDCF4A60054C7B4 /* HttpClient.m in Sources */,
 				1D982BAA1C1054B7008321C6 /* UIView_extra.m in Sources */,
 				FF5608741BE5F1FE00BE2EDA /* SHFile.m in Sources */,
@@ -372,8 +390,10 @@
 				FF5608721BE5F1FE00BE2EDA /* SHDocumentsFile.m in Sources */,
 				FF5608751BE5F1FE00BE2EDA /* SHTemporaryFile.m in Sources */,
 				FFC30B661BDCB52100D89D62 /* AppDelegate.m in Sources */,
+				1DA192C01C12C028008CB4A5 /* UIDevice+Orientation.m in Sources */,
 				FFDCC49B1BE270FC002CCAB9 /* HTypeCell.m in Sources */,
 				1D982BA91C1054B7008321C6 /* LeftSlideViewController.m in Sources */,
+				1DA192C31C12C82D008CB4A5 /* WebViewController.m in Sources */,
 				FFDCC4961BE1304B002CCAB9 /* WebViewDetailController.m in Sources */,
 				FFA281BE1BDCE3DC0095539F /* MainViewController.m in Sources */,
 				FFA281C11BDCE6930095539F /* UIColor+Hex.m in Sources */,

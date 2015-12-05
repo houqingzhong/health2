@@ -137,7 +137,7 @@
 - (void)introView
 {
     IntroViewController *iv = [IntroViewController new];
-    [iv loadHtml:@"ysf"];
+    [iv loadPath:[NSURL URLWithString:@"http://zhiyurencai.cn/public/pdf/a.pdf"]];
     [self.navigationController pushViewController:iv animated:YES];
 }
 @end

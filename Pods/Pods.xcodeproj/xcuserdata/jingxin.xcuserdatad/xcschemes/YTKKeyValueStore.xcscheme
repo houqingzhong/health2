@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0FED5309CF4E6DF569DD1B36"
+               BlueprintIdentifier = "41F6C3406EDA1B435DB2DECC"
                BuildableName = "YTKKeyValueStore.framework"
                BlueprintName = "YTKKeyValueStore"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -162,4 +162,11 @@
     return nil;
 
 }
+
++ (NSString *)documentsDirectoryPath {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
+    return documentsDirectoryPath;
+}
+
 @end

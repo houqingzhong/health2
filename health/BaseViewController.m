@@ -15,6 +15,7 @@
 {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 
 }
 
@@ -57,4 +58,13 @@
     
 }
 
+- (void)changeOrientation
+{
+    
+}
+
+- (void)statusBarOrientationChange:(NSNotification *)notif
+{
+    [self changeOrientation];
+}
 @end

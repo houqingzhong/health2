@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "288D2D80FCCF2C0E56FAAA6E"
+               BlueprintIdentifier = "534AA0BE2DF64BAAF65F9FFA"
                BuildableName = "UILabel_ContentSize.framework"
                BlueprintName = "UILabel+ContentSize"
                ReferencedContainer = "container:Pods.xcodeproj">

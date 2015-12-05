@@ -17,4 +17,5 @@
 + (id)getLocalData:(NSString *)key;
 + (void)saveDataToLocal:(id)obj key:(NSString *)key;
 
++ (NSString *)documentsDirectoryPath;
 @end

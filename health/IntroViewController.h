@@ -11,11 +11,11 @@
 
 @interface IntroViewController : BaseViewController
 
-- (void)loadHtml:(NSString *)fileName;
+//- (void)loadHtml:(NSString *)fileName;
 
 - (void)loadPath:(NSURL *)fileURL;
 
-- (void)loadHTMLString:(NSString *)string;
-
-- (void)loadHTMLWithContentId:(NSString *)contentId;
+//- (void)loadHTMLString:(NSString *)string;
+//
+//- (void)loadHTMLWithContentId:(NSString *)contentId;
 @end

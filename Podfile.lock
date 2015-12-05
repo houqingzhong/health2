@@ -34,18 +34,17 @@ PODS:
   - FMDB/standard (2.5):
     - FMDB/common
   - JSONKit-NoWarning (1.2)
-  - MD5Digest (1.0.1)
+  - MBProgressHUD (0.9.1)
+  - MD5Digest (1.1.0)
+  - NJKScrollFullScreen (0.2.6)
   - NSString+TBEncryption (1.0)
-  - RichStyleLabel (0.0.1)
   - SVPullToRefreshImprove (0.5)
-  - TTTAttributedLabel (1.13.4)
   - UIColor-MoreColors (1.1.0)
   - UILabel+ContentSize (1.0.3)
-  - UINavigationItem-iOS7Spacing (0.2)
+  - UIViewController+ODStatusBar (0.1.5)
   - WTAZoomNavigationController (1.0.7)
   - YTKKeyValueStore (0.1.2):
     - FMDB (~> 2.0)
-  - ZCAnimatedLabel (0.0.3)
 
 DEPENDENCIES:
   - AESCrypt (~> 0.0.1)
@@ -55,17 +54,16 @@ DEPENDENCIES:
   - EPSWebViewController (~> 0.1)
   - Facade (~> 1.1.0)
   - JSONKit-NoWarning (~> 1.2)
-  - MD5Digest (~> 1.0.1)
+  - MBProgressHUD (~> 0.9.1)
+  - MD5Digest (~> 1.1.0)
+  - NJKScrollFullScreen (~> 0.2.6)
   - NSString+TBEncryption (~> 1.0)
-  - RichStyleLabel (~> 0.0.1)
   - SVPullToRefreshImprove (~> 0.5)
-  - TTTAttributedLabel (~> 1.13.4)
   - UIColor-MoreColors (~> 1.1.0)
   - UILabel+ContentSize (~> 1.0.3)
-  - UINavigationItem-iOS7Spacing (~> 0.2)
+  - UIViewController+ODStatusBar (~> 0.1.5)
   - WTAZoomNavigationController (~> 1.0.7)
   - YTKKeyValueStore (~> 0.1.2)
-  - ZCAnimatedLabel (~> 0.0.3)
 
 SPEC CHECKSUMS:
   AESCrypt: 1d89bf8b0789cf274ab2205ea461adbe9321d5f8
@@ -76,16 +74,15 @@ SPEC CHECKSUMS:
   Facade: 509c4a0e5fa8517d5e0e1e47251b520775904a9a
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
-  MD5Digest: 2757ae2ee239148912a42063135c6fab2fa082f9
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
+  NJKScrollFullScreen: 13e370f935da7385b92779644b31df8d83a91447
   NSString+TBEncryption: a1cae62b97b856e2dbb63d69a8a450031ecd268f
-  RichStyleLabel: 7b9f80a4fcf4a9b3c6b3b2ba2805d53b4f4912cc
   SVPullToRefreshImprove: 5b0760edd107d6ef96c7e09c86fe2d67f6c842a5
-  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   UIColor-MoreColors: 66b65dcd322602ccd4d8064037a1ca0b4bb6acb2
   UILabel+ContentSize: ca71fe5d87afd752e53a34466e52598d65db4705
-  UINavigationItem-iOS7Spacing: c9cf8b62644fbbbb67dc422f3376195a664d6fc9
+  UIViewController+ODStatusBar: 0c3d99045c5cf093c725f417e3644d7abd8e8f95
   WTAZoomNavigationController: 5caaec1d3c04cfeafb8ca8f01c7e1a9addb1797e
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
-  ZCAnimatedLabel: 8212da1d26db90eaac3848fd29415b56ef56dcd6
 
 COCOAPODS: 0.38.2
