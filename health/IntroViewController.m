@@ -69,22 +69,28 @@
 - (void)loadPath:(NSURL *)fileURL
 {
 
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
     NSString *docPath = [HPublicMethod documentsDirectoryPath];
-
-    NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@%@", [fileURL.absoluteString tb_MD5String], fileURL.pathExtension]];
+    NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@.%@", [fileURL.absoluteString tb_MD5String], fileURL.pathExtension]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     _fileExist = [fileManager fileExistsAtPath:pathToDownloadTo];
-    
-    NSURL *targetURL = nil;
-    if (_fileExist) {
-        targetURL = [NSURL fileURLWithPath:pathToDownloadTo];
+    NSURL *targetURL = [NSURL fileURLWithPath:pathToDownloadTo];
+
+    if (!_fileExist) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSData *fileData = [[NSData alloc] initWithContentsOfURL:fileURL];
+            NSString *docPath = [HPublicMethod documentsDirectoryPath];
+            NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@%@", [fileURL.absoluteString tb_MD5String], fileURL.pathExtension]];
+            [fileData writeToFile:pathToDownloadTo atomically:YES];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSURLRequest* request = [NSURLRequest requestWithURL:targetURL] ;
+                [self.webView loadRequest:request];
+            });
+            
+        });
     }
-    else
-    {
-        targetURL = fileURL;
-    }
-    NSURLRequest* request = [NSURLRequest requestWithURL:targetURL] ;
-    [self.webView loadRequest:request];
+
 }
 
 #pragma mark webview delegate
@@ -92,15 +98,6 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-
-    NSURL *requestedURL = [request URL];
-    if (!_fileExist) {
-        NSData *fileData = [[NSData alloc] initWithContentsOfURL:requestedURL];
-        
-        NSString *docPath = [HPublicMethod documentsDirectoryPath];
-        NSString *pathToDownloadTo = [NSString stringWithFormat:@"%@/%@", docPath, [NSString stringWithFormat:@"%@%@", [requestedURL.absoluteString tb_MD5String], requestedURL.pathExtension]];
-        [fileData writeToFile:pathToDownloadTo atomically:YES];
-    }
 
     return YES;
 }
